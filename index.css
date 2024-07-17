@@ -1,0 +1,51 @@
+html,body{
+    width: 100vw;
+    height: 100vh;
+
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+img{
+    width:100%;
+    height: 100%;
+}
+
+happy-cat, happy-text{
+    position: absolute;
+    z-index: 100;
+
+    transform: translate(-50%,-50%);
+}
+
+happy-text{
+    font-size: 50px;
+    font-weight:bold;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
